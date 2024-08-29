@@ -6,7 +6,7 @@
 
 ## Structure of this reposotory
 
-###You can find two folders, one containing the python and R scripts used to carry out our analyses: "Script".
-###And a second folder containing the CSV file we used to store our LLMs prompt: "Prompt"
+#### You can find two folders, one containing the python and R scripts used to carry out our analyses: "Script".
+#### And a second folder containing the CSV file we used to store our LLMs prompt: "Prompt"
 
 ### The python code could be realized thanks to the one produced by : Espinosa, L. and Salathé, M. (2024). Using large language models as an evolutionary approach to understanding public health discourse (Version 2) [Software]. https://github.com/digitalepidemiologylab/llm_crowd_experts_annotation
