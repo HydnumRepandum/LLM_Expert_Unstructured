@@ -1,3 +1,3 @@
 ﻿prompt
 .
-"""""""Please provide the target group (in terms of public policy) to whom these projects are addressed, as expressed by the user in the text enclosed by triple backticks. \Give only the target  group without explanation in your answer. \ Generally ambiguous texts should be classified as neutral. \ ```{TWEET_TEXT_HERE}```"""""""
+"""""""Please provide the target group (persons or groups whose behavior and well-being are affected by the algorithm) to whom these algorithms are addressed, as expressed by the user in the text enclosed by triple backticks. \ Give only the target group without explanation in your answer. \ Generally ambiguous texts could be classified as neutral. \ ```{TEXT_HERE}``` `"""""""
