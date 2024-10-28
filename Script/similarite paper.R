@@ -12,7 +12,7 @@ library(dplyr)
 
 ## -----------------------------------------------------------------------------------------------------
 
-similarity<- read_excel("C:/Users/edgar/Desktop/assistanat/code pour la similarité/llm.xlsx")
+similarity<- read_excel("C://llm.xlsx")
 
 
 
@@ -151,7 +151,7 @@ p1<- ggplot(similarity) +
   labs(x = "Agreement llama Human") +
   theme_gray()
 
-ggsave("C:/Users/edgar/Desktop/assistanat/code pour la similarité/p1.pdf", plot = p1, width = 25, height = 18, units = "in")
+ggsave("C://p1.pdf", plot = p1, width = 25, height = 18, units = "in")
 print(p1)
 
 
@@ -175,7 +175,7 @@ p2 <- ggplot(similarity) +
   theme_gray()
 
 
-ggsave("C:/Users/edgar/Desktop/assistanat/code pour la similarité/p2.pdf", plot = p2, width = 25, height = 18, units = "in")
+ggsave("C://p2.pdf", plot = p2, width = 25, height = 18, units = "in")
 print(p2)
 
 
@@ -200,7 +200,7 @@ p3 <- ggplot(similarity_clean) +
   theme_gray()
 
 
-ggsave("C:/Users/edgar/Desktop/assistanat/code pour la similarité/p3.pdf", plot = p2, width = 25, height = 18, units = "in")
+ggsave("C://p3.pdf", plot = p2, width = 25, height = 18, units = "in")
 print(p3)
 
 
@@ -214,7 +214,7 @@ p4<- ggplot(similarity_clean) +
   labs(x = "Agreement llama Human") +
   theme_gray()
 
-ggsave("C:/Users/edgar/Desktop/assistanat/code pour la similarité/p1.pdf", plot = p1, width = 25, height = 18, units = "in")
+ggsave("C://p1.pdf", plot = p1, width = 25, height = 18, units = "in")
 print(p4)
 
 knitr::purl("similarite paper.Rmd")
@@ -259,7 +259,7 @@ p_combined <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill = Mo
 
 # Save the combined plot
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages.pdf",
+  "C://combined_comparison_plot_with_counts_and_percentages.pdf",
   plot = p_combined,
   width = 25,
   height = 18,
