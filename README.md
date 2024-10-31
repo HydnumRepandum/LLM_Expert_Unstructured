@@ -2,7 +2,7 @@
 
 #### This repository observes the performance of two open-source LLMs (Qwen-2 and Llama-3) in encoding a response in a database in comparison with that made by a Human.
 
-#### Two LLM models were used, one high-parameter ( Llama-3_70b) and the other low-parameter ( Qwen2_7b).
+#### Two LLM models were used, one high-parameter ( Llama-3.1_70b) and the other low-parameter ( Qwen2_7b).
 
 ## Structure of this reposotory
 
