@@ -6,7 +6,7 @@
 
 ## Structure of this reposotory
 
-#### You can find three folders, one containing the python and R scripts used to carry out our analyses for the third iteration: "Script".
+#### You can find three folders, one containing the python and R scripts used to carry out our analyses for the third iteration: "Script"
 #### A second folder containing the CSV file we used to store our LLMs prompt for the third iteration: "Prompt"
 #### And a third folder containing all the data (for all the iteration in xlsx format) that we used to produce our result, including the response of the different models, our responses and how we encode them: "Database"
 
