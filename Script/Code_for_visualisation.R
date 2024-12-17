@@ -9,11 +9,11 @@ library(DescTools)
 library(readxl)
 library(dplyr)
 library(tidyr)
-
+library(patchwork)
 
 ## ------------------------------------------------------------------------------------------------
 
-similarity<- read_excel("C:/Users/edgar/Desktop/assistanat/code pour la similarité/2023 llm.xlsx")
+similarity<- read_excel("C://1_iteration.xlsx")
 
 
 
@@ -223,7 +223,7 @@ p_combined_1 <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill = 
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages_large_text_v.1.png",    
+  "C://combined_comparison_plot_with_counts_and_percentages_large_text_v.1.png",    
   plot = p_combined_1,
   width = 25,
   height = 18,
@@ -266,7 +266,7 @@ p4<- ggplot(similarity_clean) +
   labs(x = "Agreement llama Human") +
   theme_minimal()
 
-ggsave("C:/Users/edgar/Desktop/assistanat/code pour la similarité/p1.pdf", plot = p1, width = 25, height = 18, units = "in")
+ggsave("C://p1.pdf", plot = p1, width = 25, height = 18, units = "in")
 print(p4)
 
 
@@ -321,7 +321,7 @@ p_combined_1_NA <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages_large_text_v.1_NA.png",    
+  "C://combined_comparison_plot_with_counts_and_percentages_large_text_v.1_NA.png",    
   plot = p_combined_1_NA,
   width = 25,
   height = 18,
@@ -335,7 +335,7 @@ print(p_combined_1_NA)
 
 ## ------------------------------------------------------------------------------------------------
 
-similarity<- read_excel("C:/Users/edgar/Desktop/assistanat/code pour la similarité/2023 fichier de base Copie final.xlsx")
+similarity<- read_excel("C://2_iteration.xlsx")
 
 
 
@@ -551,7 +551,7 @@ p_combined_2 <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill = 
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages_large_text_v.2.png",    
+  "C://combined_comparison_plot_with_counts_and_percentages_large_text_v.2.png",    
   plot = p_combined_2,
   width = 25,
   height = 18,
@@ -647,7 +647,7 @@ p_combined_2_NA <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages_large_text_v.2_NA.png",    
+  "C://combined_comparison_plot_with_counts_and_percentages_large_text_v.2_NA.png",    
   plot = p_combined_2_NA,
   width = 25,
   height = 18,
@@ -660,7 +660,7 @@ print(p_combined_2_NA)
 
 ## ------------------------------------------------------------------------------------------------
 
-similarity<- read_excel("C:/Users/edgar/Desktop/assistanat/code pour la similarité/llm.xlsx")
+similarity<- read_excel("C://3_iteration.xlsx")
 
 
 
@@ -781,9 +781,6 @@ ggplot(conf_matrix_melt, aes(x=Var1, y=Var2, fill=value)) +
 
 ## ------------------------------------------------------------------------------------------------
 
-library(ggplot2)
-
-
 similarity$Aggrement_llama_human_manual <- ifelse(similarity$Aggrement_llama_human_manual == "0", "No agreement",
                                         ifelse(similarity$Aggrement_llama_human_manual == "1", "Strong agreement",
                                         ifelse(similarity$Aggrement_llama_human_manual == "2", "Approximate agreement",
@@ -874,7 +871,7 @@ p_combined_3 <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill = 
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages_large_text_v.3.png",    
+  "C://combined_comparison_plot_with_counts_and_percentages_large_text_v.3.png",    
   plot = p_combined_3,
   width = 25,
   height = 18,
@@ -917,7 +914,7 @@ p12<- ggplot(similarity_clean) +
   labs(x = "Agreement llama Human") +
   theme_minimal()
 
-ggsave("C:/Users/edgar/Desktop/assistanat/code pour la similarité/p1.pdf", plot = p1, width = 25, height = 18, units = "in")
+ggsave("C://p1.pdf", plot = p1, width = 25, height = 18, units = "in")
 print(p12)
 
 
@@ -973,7 +970,7 @@ p_combined_3_NA <- ggplot(similarity_summary, aes(x = Agreement, y = Count, fill
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_comparison_plot_with_counts_and_percentages_large_text_v.3_NA.png",    
+  "C://combined_comparison_plot_with_counts_and_percentages_large_text_v.3_NA.png",    
   plot = p_combined_3_NA,
   width = 25,
   height = 18,
@@ -987,8 +984,6 @@ print(p_combined_3_NA)
 ## ------------------------------------------------------------------------------------------------
 #Maintenant que nous avons tous nos graphiques pour nos trois iterations nous allons les merged ensemble 
 
-library(patchwork)
-
 
 
 ## ------------------------------------------------------------------------------------------------
@@ -999,7 +994,7 @@ print(combined_plot)
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_plot_patchwork.png",
+  "C://combined_plot_patchwork.png",
   plot = combined_plot,
   width = 45,    
   height = 20,    
@@ -1016,7 +1011,7 @@ print(combined_plot_NA)
 
   
 ggsave(
-  "C:/Users/edgar/Desktop/assistanat/code pour la similarité/combined_plot_patchwork_NA.png",
+  "C://combined_plot_patchwork_NA.png",
   plot = combined_plot_NA,
   width = 45,    
   height = 20,    
