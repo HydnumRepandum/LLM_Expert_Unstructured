@@ -1,5 +1,7 @@
 ## Use of Open-Source LLM to produce unstructured responses in a Public Administration Database.
 
+Paper doi: https://doi.org/10.31219/osf.io/kp3zf_v1 
+
 This repository observes the performance of different open-source LLMs (Qwen-2, Llama-3 and Mixtral) in encoding a response in a database in comparison with that made by a Human.
 Numbers of LLM models were used, one high-parameter (Llama-3.1_70b) and the other low-parameter (Qwen2_7b, Mixtral, Llama-3).
 
